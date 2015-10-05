@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!--------------------------------------------------------------------->
+<!-- THIS WEBSITE WAS MADE BY ETHAN GOLDFARB, NOT ANTHONY ROMANIELLO -->
+<!--------------------------------------------------------------------->
+<!--------------- I'm just hosting it for him -Anthony ---------------->
+<head>
+    <title>meme</title>
+    <style>
+        html {
+            background-color: #CAFFE5;
+        }
+    </style>
+</head>
+
+<body align="center">
+    <img src="/amstud/images/bernadette.png">
+    <audio src="/amstud/music/dont-drop-that-thun-thun.mp3" autoplay loop></audio>
+    <div align="center">
+        <button onclick="randomSong()">meme</button>
+    </div>
+
+    <p id="demo"></p>
+
+    <script>
+        function randomSong() {
+            var randNum = Math.floor((Math.random() * 10) + 1);
+            document.getElementById("demo").innerHTML = randNum;
+        }
+    </script>
+</body>
+
+</html>
