@@ -1,0 +1,110 @@
+html {
+    /***** SETTING THAT SICK BG IMAGE *****/
+    background: url(twitter-james.png) no-repeat center 25% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.box {
+    /***** BOUNDARIES OF THE BOUNCE *****/
+    margin: -8px -8px auto;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.box b {
+    /***** TEXT STYLING AND MOVEMENT *****/
+    color: white;
+    font-family: Papyrus;
+    font-weight: 300;
+    font-size: 64px;
+    display: block;
+    width: 550px;
+    height: 20px;
+    position: absolute;
+    -webkit-animation: moveX 4.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    -moz-animation: moveX 4.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    -o-animation: moveX 4.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+    animation: moveX 4.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+}
+
+
+/***** CROSS BROWSER ANIMATION SUPPORT *****/
+
+@-webkit-keyframes moveX {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 450px);
+    }
+}
+
+@-moz-keyframes moveX {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 450px);
+    }
+}
+
+@-o-keyframes moveX {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 450px);
+    }
+}
+
+@keyframes moveX {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 450px);
+    }
+}
+
+@-webkit-keyframes moveY {
+    from {
+        top: 0;
+    }
+    to {
+        top: calc(100% - 60px);
+    }
+}
+
+@-moz-keyframes moveY {
+    from {
+        top: 0;
+    }
+    to {
+        top: calc(100% - 60px);
+    }
+}
+
+@-o-keyframes moveY {
+    from {
+        top: 0;
+    }
+    to {
+        top: calc(100% - 60px);
+    }
+}
+
+@keyframes moveY {
+    from {
+        top: 0;
+    }
+    to {
+        top: calc(100% - 60px);
+    }
+}
+
+/***** THATS RIGHT, CROSS BROWSER MOTHERFUCKER *****/
